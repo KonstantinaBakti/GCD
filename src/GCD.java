@@ -104,6 +104,8 @@ public class GCD extends JFrame implements ActionListener {
             int res = gcd(first, second);
             result.setText("The GCD of those numbers is " + res);
         } else {
+            team.clear();
+            area.setText("");
             int n = Integer.parseInt(tn.getText());
             findTeam(n);
             area.setText(team.toString());
